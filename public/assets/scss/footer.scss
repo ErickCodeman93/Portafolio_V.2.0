@@ -1,0 +1,13 @@
+@media #{$desktop-large},
+#{$desktop},
+#{$tablet},
+#{$phone} {
+	body > footer {
+		
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+
+	
+	}
+}
