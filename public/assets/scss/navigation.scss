@@ -2,5 +2,11 @@
 #{$desktop},
 #{$tablet},
 #{$phone} {
-	nav {}
+	nav {
+
+		.cursorEventIdom{
+			cursor: pointer;
+		}
+
+	}
 }
