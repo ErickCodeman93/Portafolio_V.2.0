@@ -1,0 +1,76 @@
+{
+	"es":{
+		"desc": "Soy Ingeniero en Tecnologías de la Información y Comunicaciones dedicado al desarrollo de software.",
+		"experience": [
+			{ 
+				"name" : "Fonatur",
+				"desc" : "Un desarrollo elaborado para el Fondo Nacional de Fomento al Turismo que consistió en un buscador de lotes unifamiliares, condominios, comerciales y hoteleros que buscan inversión en regiones turísticas mexicanas." 
+			},
+			{ 
+				"name" : "Grupo Maya",
+				"desc" : "Realice soporte al sitio, ERP, aplicación móvil ( publicación en tiendas de aplicaciones ) y fui parte del equipo que realizó la versión 2 del ERP" 
+			},
+			{ 
+				"name" : "Infraestructura",
+				"desc" : "He trabajado en actividades que involucran la configuración, creación y soporte de virtual host, scripts para la automatización, migración de dominios y sitios web además de respaldos de bases de datos." 
+			},
+			{ 
+				"name" : "Muvop",
+				"desc" : "Muvop es una financiera que apoya a hombres, mujeres y negocios en donde colabore en la creación de la plataforma de cursos online que ayudan a fortalecer el crecimiento personal." 
+			},
+			{ 
+				"name" : "Net@Work",
+				"desc" : "Es un espacio para el coworking, se encuentran en la colonia Roma de la CDMX. Llevé a cabo la realización del sitio web y participé en el desarrollo del punto de venta." 
+			},
+			{ 
+				"name" : "Sistema de Consulta de Contribuyentes",
+				"desc" : "Aporte en la realización de sitios y el sistema enfocado en la búsqueda y monitoreo de contribuyentes que el Servicio de Administración Tributaria (SAT) reporta como incumplidos" 
+			},
+			{ 
+				"name" : "Televisa Regional",
+				"desc" : "Desarrolle una estructura para mostrar banners publicitarios, colabore en la automatización de la inserción de páginas dentro del sitemap y aporte un algoritmo para las notas destacadas." 
+			},
+			{ 
+				"name" : "Villa Casalet",
+				"desc" : "Es un sitio que ofrece el servicio de hospedaje en Puerto Escondido Oaxaca, México en donde ayude en la realización del sitio en base a un diseño aprobado." 
+			}
+		]
+	},
+	"en": {
+		"desc": "I'm Enginner in Information technology and communications dedicated to software development.",
+		"experience": [
+			{ 
+				"name" : "Fonatur",
+				"desc" : "//" 
+			},
+			{ 
+				"name" : "Mayan group",
+				"desc" : "//" 
+			},
+			{ 
+				"name" : "Infrastructure",
+				"desc" : "//" 
+			},
+			{ 
+				"name" : "Muvop",
+				"desc" : "//" 
+			},
+			{ 
+				"name" : "Net@Work",
+				"desc" : "//" 
+			},
+			{ 
+				"name" : "Taxpayer Consultation System",
+				"desc" : "//" 
+			},
+			{ 
+				"name" : "Televisa Regional",
+				"desc" : "//" 
+			},
+			{ 
+				"name" : "Villa Casalet",
+				"desc" : "//" 
+			}
+		]
+	}
+}

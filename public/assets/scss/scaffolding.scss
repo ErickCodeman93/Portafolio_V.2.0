@@ -1,0 +1,30 @@
+@media #{$desktop-large},
+#{$desktop},
+#{$tablet},
+#{$phone} {
+	body {
+		color: $text-color;
+		font-family: $font-family-base;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: $font-fat;
+	}
+
+	a {
+		@include link( $text-color, $brand-primary );
+	}
+
+	#map {
+		height: 400px;
+		width: 100%;
+	}
+
+	.fancybox-skin {
+		margin: 40px;
+	}
+
+	.section-first {
+		margin-top: 3em;
+	}
+}

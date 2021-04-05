@@ -1,0 +1,130 @@
+@mixin appearance-none () {
+	@include property( appearance, none );
+	@include property( border-radius, 0px );
+}
+
+@mixin bg () {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@mixin blur ( $value ) {
+	@include property( filter, blur( $value ) );
+}
+
+@mixin box-shadow( $type, $h-shadow, $v-shadow, $blur, $spread, $color ) {
+	@include property( box-shadow, $type $h-shadow $v-shadow $blur $spread $color );
+}
+
+@mixin box-shadow-inset( $h-shadow, $v-shadow, $blur, $spread, $color ) {
+	@include box-shadow( inset, $h-shadow, $v-shadow, $blur, $spread, $color );
+}
+
+@mixin brightness ( $value ) {
+	@include property( filter, brightness( $value ) );
+}
+
+@mixin center-vertical {
+	top: 50%;
+	@include property( transform, translateY( -50% ) );
+}
+
+@mixin clean () {
+	border: 0;
+	border-radius: 0;
+	line-height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	
+	@include property( box-shadow, none );
+}
+
+@mixin effectDarkenBlur( $blur, $brightness ) {
+	@include property( filter, blur( $blur ) brightness( $brightness ) );
+}
+
+@mixin effectZoomRotate ( $scale, $rotate ) {
+	@include property( transform, rotate( $rotate ) scale( $scale ) );
+}
+
+@mixin font-smoothing {
+	@include property( font-smoothing, antialiased );
+}
+
+@mixin lines-by-paragraph ( $lines, $height ) {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $lines;
+	display: -webkit-box;
+	height: $height;
+	overflow: hidden;
+}
+
+@mixin link ( $color-base, $color_hover ) {
+	color: $color-base;
+	
+	@include user-select;
+
+	&:hover,
+	&:focus {
+		color: $color_hover;
+		text-decoration: none;
+
+		@include transition( .1s );
+	}
+
+	&:active {
+		color: $color_hover;
+	}
+}
+
+@mixin opacity ( $opacity ) {
+	opacity: $opacity;
+}
+
+@mixin placeholder ( $color ) {
+	:-moz-placeholder {
+		color: $color;
+		text-align: center;
+	}
+
+	::-moz-placeholder {
+		color: $color;
+		text-align: center;
+	}
+
+	:-ms-input-placeholder {
+		color: $color;
+		text-align: center;
+	}
+
+	::-webkit-input-placeholder {
+		color: $color;
+		text-align: center;
+	}
+}
+
+@mixin property( $property, $value ) {
+	#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	-webkit-#{$property}: $value;
+}
+
+@mixin rotate ( $value ) {
+	@include property( transform, rotate( $value ) );
+}
+
+@mixin scale ( $value ) {
+	@include property( transform, scale( $value ) );
+}
+
+@mixin transition ( $duration ) {
+	@include property( transition, all $duration ease-in-out );
+}
+
+@mixin user-select {
+	@include property( user-select, none );
+}

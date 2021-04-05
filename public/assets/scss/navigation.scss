@@ -1,0 +1,12 @@
+@media #{$desktop-large},
+#{$desktop},
+#{$tablet},
+#{$phone} {
+	nav {
+
+		.cursorEventIdom{
+			cursor: pointer;
+		}
+
+	}
+}
