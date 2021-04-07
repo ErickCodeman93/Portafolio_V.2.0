@@ -193,3 +193,36 @@
 		}
 	}
 }
+
+@media #{$desktop-large},
+#{$desktop} {
+
+	#nav-hero {
+		.hamburguer {
+			display: none;
+		}
+
+		.nav-list { 
+			ul {
+				position: initial !important;
+				display: block !important;
+				height: auto !important;
+				width: fit-content !important;
+				background-color: transparent !important;
+
+				li{
+					display: inline-block !important;
+				}
+
+				a{
+					font-size: .9rem !important;
+				}
+
+				a::after{
+					display: none !important;
+				}
+			}
+		}	
+	}
+
+}
