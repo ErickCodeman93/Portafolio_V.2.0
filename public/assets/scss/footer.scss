@@ -12,7 +12,7 @@
 	#footer{
 		background-color: #311580;
 		color: white;
-		padding: 10rem 0 5rem 0;
+		padding: 5rem 0 1rem 0;
 		footer {
 			display: flex;
 			align-items: flex-start;
@@ -28,7 +28,7 @@
 						display: inline-block;
 						width: 100%;
 						color: white;
-						font-size: 1.5rem;
+						font-size: 1rem;
 						padding: .5rem;
 						text-decoration: none;
 					}
@@ -80,11 +80,11 @@
 	}	
 
 	#copyright{
-		padding: 1rem 0;
+		padding: .3rem 0;
 		background-color: #221052;
 		p{
 			color:white;
-			margin: 1rem;
+			margin: 0px;
 		}
 	}
 }

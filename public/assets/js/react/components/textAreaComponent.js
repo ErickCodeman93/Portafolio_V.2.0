@@ -1,6 +1,6 @@
 const { useState } = React;
 
-const InputComponent = ( { 
+const TextAreaComponent = ( { 
 	myState,
 	myChangeState,
 	type,
@@ -36,25 +36,6 @@ const InputComponent = ( {
 		
 	} //end function
 
-	const nameIcon = ( name ) => {
-
-		let icon = '';
-
-		switch ( name ) {
-			case 'nombre':
-				icon = 'fas fa-user';
-			break;
-			case 'email':
-				icon = 'fas fa-envelope';
-			break;
-			case 'telefono':
-				icon = 'fas fa-phone';
-			break;
-		}
-
-		return icon;
-	} //End function
-
 
 	return (
 		<div>
@@ -64,10 +45,7 @@ const InputComponent = ( {
 				{ label }
 			</Label>
 			<GroupInput>
-				<IconInput>
-					<i class={ nameIcon( name ) }></i>
-				</IconInput>
-				<Input 
+				<TextArea 
 					id={ name } 
 					name={ name } 
 					type={ type } 
@@ -78,10 +56,10 @@ const InputComponent = ( {
 					onBlur={ validation }
 					valido={ myState ? myState.valido : '' }
 				/>
-				<IconoValidation
+				{/* <IconoValidation
 						valido={ myState ? myState.valido : '' }>
 						<i class={ icon ? "fas fa-check-circle" : "fas fa-times-circle" }></i>
-				</IconoValidation>
+				</IconoValidation> */}
 			</GroupInput>
 			<LeyendaError 
 				valido={ myState ? myState.valido : '' }>

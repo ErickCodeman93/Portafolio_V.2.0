@@ -3,14 +3,21 @@
 #{$tablet},
 #{$phone} {
 	
+	:root {
+		--primary-color: #5924ed;
+		--secondary-black: #0d081a;
+		--secondary-gray: #48464b;
+		--body-bg: #efebfa;
+	}
+
 	main {
 
-		background-color: #e5e5e5;
+		background-color: var(--primary-color);
 		max-width: 800px;
 		width: 90%;
 		margin: auto;
 		padding: 40px;
-		font-family: 'Roboto', sans-serif;
-
+		font-family: 'Montserrat', sans-serif;
+		border-radius: 18px;
 	}
 }
