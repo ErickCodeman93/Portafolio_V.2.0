@@ -30,10 +30,11 @@ const TextAreaComponent = ( {
 					onKeyUp={ (e) => changeIcon( e, regex ) }
 					onBlur={ (e) => changeIcon( e, regex ) }
 					valido={ myState ? myState.valido : '' }
+					maxLength={ 500 }
 				/>
 			</GroupInput>
-			<LeyendaError 
-				valido={ myState ? myState.valido : '' }>
+			<p className="text-center mt-2 text-white">{ myState ? maxLengthTextArea( myState.campo ) : '0'  } de 500 caracteres.</p>
+			<LeyendaError valido={ myState ? myState.valido : '' }>
 				{ msgError }
 			</LeyendaError>
 		</div>

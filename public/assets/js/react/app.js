@@ -83,8 +83,8 @@ const App = () => {
 					label="Mensaje: "
 					placeholder="Escribe aquí"
 					name="message"
-					msgError="No es un formato válido."
-					regex={ expresiones.nombre }
+					msgError="El mensaje debe tener solo letras."
+					regex={ expresiones.mensaje }
 					icon={ icon }
 					changeIcon={ changeIcon }
 					nameIcon={ nameIcon }

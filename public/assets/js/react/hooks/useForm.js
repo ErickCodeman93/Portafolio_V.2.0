@@ -7,7 +7,6 @@ const useForm = ( initialState = {} ) => {
 	const [ time, setTime ] 	= useState( false );
 	const [ icon, setIcon ] 	= useState( false );
 
-
 	const { name, email, phone, message } = values;
 
 	const handleInputChanges = ( { target } ) => {
@@ -41,11 +40,11 @@ const useForm = ( initialState = {} ) => {
 		} //end else
 
 		const data = {
-			name,
-			phone,
-			email,
-			message,
-			idiom
+			name:name.campo,
+			phone:phone.campo,
+			email:email.campo,
+			message:message.campo,
+			idiom,
 		}
 
 		const endpoint = '/api/users';

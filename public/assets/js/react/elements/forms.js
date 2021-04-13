@@ -81,7 +81,7 @@ const TextArea = window.styled.textarea`
 	background: #fff;
 	border-radius: 3px;
 	height: 180px;
-	line-height: 45px;
+	line-height: 30px;
 	padding: 0 40px 0 10px;
 	transition: .3s ease all;
 	border: 3px solid transparent;
