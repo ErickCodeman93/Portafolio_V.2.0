@@ -186,6 +186,7 @@ const Boton = window.styled.button`
 `;
 
 const MensajeExito = window.styled.p`
+	margin-top:20px;
 	font-size: 14px;
 	color: ${ colores.exito };
 `;
@@ -193,6 +194,7 @@ const MensajeExito = window.styled.p`
 
 const MensajeError = window.styled.div`
 	height: auto;
+	margin-top:20px;
 	line-height: 45px;
 	background: #F66060;
 	padding: 0px 15px;

@@ -1,163 +1,108 @@
-const { useState } = React;
-
 const App = () => {
 
-	const [ nombre, cambiarNombre ] = useState( {
-		campo: '',
-		valido: null
+	const { 
+			values:formValues, 
+			handleInputChanges, 
+			time,
+			formularioValido,
+			onSubmit,
+			nameIcon,
+			changeIcon,
+			icon, 
+		} = useForm( {
+		name: { 
+			campo: '',
+			valido: null
+		},
+		email: { 
+			campo: '',
+			valido: null
+		},
+		phone: { 
+			campo: '',
+			valido: null
+		},
+		message: { 
+			campo: '',
+			valido: null
+		},
 	} );
 
-	const [ correo, cambiarCorreo ] = useState( {
-		campo: '',
-		valido: null
-	} );
-
-	const [ telefono, cambiarTelefono ] = useState( {
-		campo: '',
-		valido: null
-	} );
-
-	const [ mensaje, cambiarMensaje ] = useState( {
-		campo: '',
-		valido: null
-	} );
-
-	const [formularioValido, cambiarFormularioValido ] = useState( null );
-
-	const onSubmit = ( e ) => {
-		e.preventDefault();
-
-		const [ ,idiom ] = location.pathname.split( '/' );
-
-		if( 
-			nombre.valido 		=== 'true' && 
-			correo.valido 		=== 'true' && 
-			mensaje.valido 		=== 'true'
-		 ){
-
-			cambiarFormularioValido( true );
-			cambiarNombre( { campo: '',valido: null } );
-			cambiarCorreo( { campo: '',valido: null } );
-			cambiarTelefono( { campo: '',valido: null } );
-			cambiarMensaje( { campo: '',valido: null } );
-
-		} //end if
-		else{
-			cambiarFormularioValido( false );
-			return;
-		} //end else
-
-		const { campo:name } = nombre;
-		const { campo:phone } = telefono;
-		const { campo:email } = correo;
-		const { campo:menssage } = mensaje;
-
-		const data = {
-			name,
-			phone,
-			email,
-			menssage,
-			idiom
-		}
-
-		const endpoint = '/api/users';
-
-		Swal.fire( {
-			"allowOutsideClick": false,
-			"title": "Espere un momento por favor.",
-		} );
-		Swal.showLoading();
-
-		post( endpoint, data ).then( ( response ) => {
-			
-			Swal.close();
-
-			if( check( response ) )
-				Swal.fire( {
-					"confirmButtonText": "Aceptar",
-					"title": "Éxito",
-					"icon": 'success',
-				} );
-			else
-				Swal.fire({
-					"confirmButtonText": "Aceptar",
-					"title": "Error",
-					"icon": "error",
-					"text": errorsMsg( response )
-				});
-			
-
-		} ).catch( error => {
-
-			console.log( console.log( error ) );
-			Swal.close();
-			Swal.fire({
-				"confirmButtonText": "Aceptar",
-				"title": "Error",
-				"icon": "error",
-				'text': "Error del servidor"
-			});
-		} )
-
-	} //end function
+	const { name, email, phone, message } = formValues;
 
 	return (
 		<main>
-			<Formulario action="" onSubmit={onSubmit}>
+			<Formulario action="" onSubmit={ onSubmit }>
 				
 				<InputComponent
-					myState={ nombre }
-					myChangeState={ cambiarNombre }
+					myState={ name }
+					myHandleFunction={ handleInputChanges }
 					type="text"
 					label="Nombre: *"
 					placeholder="Nombre"
-					name="nombre"
+					name="name"
 					msgError="El nombre debe tener solo letras."
 					regex={ expresiones.nombre }
+					icon={icon}
+					changeIcon={ changeIcon }
+					nameIcon={ nameIcon }
 				/>
 
 				<InputComponent
-					myState={ correo }
-					myChangeState={ cambiarCorreo }
+					myState={ email }
+					myHandleFunction={ handleInputChanges }
 					type="text"
 					label="Email: *"
 					placeholder="Email"
 					name="email"
 					msgError="No es un formato válido de correo."
 					regex={ expresiones.correo }
+					icon={icon}
+					changeIcon={ changeIcon }
+					nameIcon={ nameIcon }
 				/>
 
 				<InputComponent
-					myState={ telefono }
-					myChangeState={ cambiarTelefono }
+					myState={ phone }
+					myHandleFunction={ handleInputChanges }
 					type="text"
 					label="Teléfono:"
 					placeholder="Teléfono"
-					name="telefono"
+					name="phone"
 					msgError="No es un formato válido de teléfono."
 					regex={ expresiones.telefono }
+					icon={ icon }
+					changeIcon={ changeIcon }
+					nameIcon={ nameIcon }
 				/>
 
 				<TextAreaComponent
-					myState={ mensaje }
-					myChangeState={ cambiarMensaje }
+					myState={ message }
+					myHandleFunction={ handleInputChanges }
 					type="text"
-					label="Mensaje: *"
+					label="Mensaje: "
 					placeholder="Escribe aquí"
-					name="mensaje"
+					name="message"
 					msgError="No es un formato válido."
 					regex={ expresiones.nombre }
+					icon={ icon }
+					changeIcon={ changeIcon }
+					nameIcon={ nameIcon }
 				/>
 
-				{ formularioValido === false && <MensajeError>
-					<p>
-					<i class="fas fa-exclamation-circle"></i> <b>Error:</b> Todos los campos son obligatorios.
-					</p>
-				</MensajeError> }
+				{ formularioValido === false && 
+					<MensajeError>
+						<p>
+							<i class="fas fa-exclamation-circle"></i> <b>Error:</b> Todos los campos son obligatorios.
+						</p>
+					</MensajeError> 
+				}
 
 				<ContenedorBotonCentrado>
 					<Boton type="submit">Enviar</Boton>
-					{ formularioValido === true && <MensajeExito>Enviado exitosamente!</MensajeExito> }
+					{ ( formularioValido && time ) && 
+						<MensajeExito id="success-message">Enviado exitosamente!</MensajeExito> 
+					}
 				</ContenedorBotonCentrado>
 
 			</Formulario>

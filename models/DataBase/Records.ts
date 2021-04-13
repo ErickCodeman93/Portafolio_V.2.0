@@ -2,28 +2,21 @@ import mongoose, { Schema } from 'mongoose';
 
 const RecordSchema = new Schema({
 
-	user:{
-		type: String,
-		require: [ true, 'User is requires' ]
-	},
 	name:{
 		type: String,
 		require: [ true, 'Name is requires' ]
+	},
+	email:{
+		type: String,
+		require: [ true, 'Email is requires' ]
 	},
 	phone: {
 		type: String,
 		require: [ true, 'Name is requires' ]
 	},
-	email:{
-
-	},
-	password:{
+	message: {
 		type: String,
-		required: [ true, 'Password is required' ],
-	},
-	state:{
-		type: Boolean,
-		default: true,
+		default: 'Sin mensaje'
 	},
 },
 {
@@ -31,7 +24,6 @@ const RecordSchema = new Schema({
 		transform: function (doc, ret) {
 			ret.uid = ret._id;
 			delete ret._id;
-			delete ret.password;
 			delete ret.__v;
 
 			return ret;

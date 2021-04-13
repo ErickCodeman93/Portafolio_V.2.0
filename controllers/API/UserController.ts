@@ -13,18 +13,16 @@ export const getUsuarios = ( req:Request, res: Response ) => {
 export const postUsuario = async ( req:Request, res: Response ) => {
 
 
-	const { user, name, phone, email, pwd:password, idiom } = req.body;
+	const { name, phone, email, message ,idiom } = req.body;
 
 	try {
 
 		
-		const data = new Records( { user, name, phone, email, password } ); 
-		
-		data.password = encryptPassword( password );
+		const data = new Records( { name, phone, email, message } ); 
 		
 		await data.save();
 		
-		await send( name, email, phone, 'Hola Mundo', idiom );
+		await send( name, email, phone, message, idiom );
 
 		return res.status( 201 ).json({
 			msg: 'POST',
