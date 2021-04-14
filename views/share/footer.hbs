@@ -8,34 +8,25 @@
 					</a>
 				</div>
 				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sit, voluptates veritatis porro eveniet nulla nostrum, quibusdam laboriosam quod rem ratione dolorem cupiditate nisi molestias modi.
+					{{ data.footer.content }}
 				</p>
 			</div>
 			<div class="con-2">
-				<h2 class="column-heading">Important <br />Links</h2>
+				<h2 class="column-heading">{{ data.footer.titles.map }}</h2>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Tecnology</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-			<div class="con-3">
-				<h2 class="column-heading">Contact <br />Links</h2>
-				<ul>
-					<li><a href="mailto:erickcontacto@gmail.com">erickcontacto@gmail.com</a></li>
-					<li><a href="#">55 5197 7836</a></li>
-					<li><a href="#">Cuautitlan México</a></li>
+					<li><a href="#">{{ data.menu.home }}</a></li>
+					<li><a href="#">{{ data.menu.skills }}</a></li>
+					<li><a href="#">{{ data.menu.about }}</a></li>
+					<li><a href="#">{{ data.menu.projects }}</a></li>
+					<li><a href="#">{{ data.menu.contact }}</a></li>
 				</ul>
 			</div>
 			<div class="con-4">
-				<h2 class="column-heading">Social <br />Links</h2>
+				<h2 class="column-heading">{{ data.footer.titles.social }}</h2>
 				<ul>
-					<li><a href="#">FB</a></li>
-					<li><a href="#">TW</a></li>
-					<li><a href="#">LI</a></li>
-					<li><a href="#">GH</a></li>
+					<li><a href="https://twitter.com/Erick_Dreadful" target="_blank"><i class="fab fa-twitter-square  fa-2x"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/erick-a-alva-vazqu%C3%A9z-392516204" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+					<li><a href="https://github.com/ErickCodeman93" target="_blank"><i class="fab fa-github  fa-2x"></i></a></li>
 				</ul>
 			</div>
 		</footer>

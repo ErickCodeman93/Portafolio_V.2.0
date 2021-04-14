@@ -43,7 +43,7 @@
 					transition: .5s ease left;
 
 					&.active{
-						left: 10%;
+						left: 0%;
 					}
 
 					a {
@@ -63,10 +63,12 @@
 							left: 50%;
 							transform: translate( -50%, -50% ) scale(0);
 							color: rgba( 240, 248, 255, 0.021 );
-							font-size: 9rem;
+							font-size: 8rem;
 							letter-spacing: 50px;
 							z-index: -1;
 							transition: .3s ease letter-spacing;
+							text-align: center;
+
 						}
 					}
 
@@ -79,6 +81,8 @@
 						a::after {
 							transform: translate( -50%, -50% ) scale(1);
 							letter-spacing: initial;
+							text-align: center;
+
 						}	
 					} 
 				}
@@ -209,6 +213,7 @@
 				height: auto !important;
 				width: fit-content !important;
 				background-color: transparent !important;
+				padding-top: 0px;
 
 				li{
 					display: inline-block !important;
@@ -225,4 +230,15 @@
 		}	
 	}
 
+}
+
+@media #{$tablet},
+#{$phone} {
+	#nav-hero {
+		.nav-list { 
+			ul{
+				padding-top: 45px !important;
+			}
+		}
+	}
 }

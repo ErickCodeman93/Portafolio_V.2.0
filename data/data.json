@@ -1,76 +1,234 @@
 {
 	"es":{
-		"desc": "Soy Ingeniero en Tecnologías de la Información y Comunicaciones dedicado al desarrollo de software.",
+		"menu" : {
+			"home":"Inicio",
+			"skills":"Habilidades",
+			"about":"Acerca de",
+			"projects":"Experiencia",
+			"contact" :"Contacto"
+		},
+		"home" : {
+			"title" : { "head1" : "Hola", "head2" : "Yo soy" , "head3" : "Erick" },
+			"button" : "Portafolio"
+		},
+		"skills" : {
+			"frontEnd" : { 
+				"title" : "Desarrollo Web",
+				"content" : "Realización de propuestas de UX/UI e interacción del usuario dentro de la web además de recibir y enviar datos al servidor."
+			},
+			"backEnd" : { 
+				"title" : "Back End",
+				"content" : "Desarrollo de código del lado del servidor para integrarlo con sistemas de fondo y servicios en la nube." 
+			},
+			"mobile": { 
+				"title" : "Aplicaciones Móviles",
+				"content" : "Construcción de aplicaciones móviles que conectan de forma segura con la información que se necesita."
+			}
+		},
+		"about" : {
+			"title" : "Un Desarrollador de Software",
+			"subtitle" : "Hola! soy Erick",
+			"own" : "Otro simple desarrollador.",
+			"desc": "Soy Ingeniero en TIC ’S y cuento con 3 años de experiencia en el área de desarrollo web. También cuento con el conocimiento en automatización y arquitectura de software.",
+			"buttons" : {  "download" : "Descarga mi CV", "know":"Colaboremos !!!" }
+		},
 		"experience": [
 			{ 
-				"name" : "Fonatur",
-				"desc" : "Un desarrollo elaborado para el Fondo Nacional de Fomento al Turismo que consistió en un buscador de lotes unifamiliares, condominios, comerciales y hoteleros que buscan inversión en regiones turísticas mexicanas." 
+				"title" : "Fonatur",
+				"subtitle": "Buscador Web",
+				"desc" : "Un desarrollo elaborado para el Fondo Nacional de Fomento al Turismo que consistió en un buscador de lotes unifamiliares, condominios, comerciales y hoteleros que buscan inversión en regiones turísticas mexicanas.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link" : "http://www.fonatur.mx/es/venta-terrenos.html",
+				"img" : "/assets/img/experience/fonatur.jpg"
 			},
 			{ 
-				"name" : "Grupo Maya",
-				"desc" : "Realice soporte al sitio, ERP, aplicación móvil ( publicación en tiendas de aplicaciones ) y fui parte del equipo que realizó la versión 2 del ERP" 
+				"title" : "Grupo Maya",
+				"subtitle": "Sistema ERP",
+				"desc" : "Realice soporte al sitio, ERP, aplicación móvil ( publicación en tiendas de aplicaciones ) y fui parte del equipo que realizó la versión 2 del ERP.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link":"https://mayaseguridad.mx/",
+				"img" : "/assets/img/experience/grupomaya.jpg"
 			},
 			{ 
-				"name" : "Infraestructura",
-				"desc" : "He trabajado en actividades que involucran la configuración, creación y soporte de virtual host, scripts para la automatización, migración de dominios y sitios web además de respaldos de bases de datos." 
+				"title" : "Infraestructura",
+				"subtitle": "Configuración de Servicios",
+				"desc" : "He trabajado en actividades que involucran la configuración, creación y soporte de virtual host, scripts para la automatización, migración de dominios y sitios web además de respaldos de bases de datos.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link":"#",
+				"img" : "/assets/img/experience/server.jpg"
 			},
 			{ 
-				"name" : "Muvop",
-				"desc" : "Muvop es una financiera que apoya a hombres, mujeres y negocios en donde colabore en la creación de la plataforma de cursos online que ayudan a fortalecer el crecimiento personal." 
+				"title" : "Muvop",
+				"subtitle": "Cursos en Linea",
+				"desc" : "Muvop es una financiera que apoya a hombres, mujeres y negocios en donde colabore en la creación de la plataforma de cursos online que ayudan a fortalecer el crecimiento personal.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link": "https://educacion.muvop.com/",
+				"img" : "/assets/img/experience/muvop.jpg"
 			},
 			{ 
-				"name" : "Net@Work",
-				"desc" : "Es un espacio para el coworking, se encuentran en la colonia Roma de la CDMX. Llevé a cabo la realización del sitio web y participé en el desarrollo del punto de venta." 
+				"title" : "Net@Work",
+				"subtitle": "Sitio Web y Punto de Venta",
+				"desc" : "Es un espacio para el coworking, se encuentran en la colonia Roma de la CDMX. Llevé a cabo la realización del sitio web y participé en el desarrollo del punto de venta.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link": "https://netw.com.mx/",
+				"img" : "/assets/img/experience/NETW.jpg"
 			},
 			{ 
-				"name" : "Sistema de Consulta de Contribuyentes",
-				"desc" : "Aporte en la realización de sitios y el sistema enfocado en la búsqueda y monitoreo de contribuyentes que el Servicio de Administración Tributaria (SAT) reporta como incumplidos" 
+				"title" : "Sistema de Consulta de Contribuyentes",
+				"subtitle": "",
+				"desc" : "Aporte en la realización de sitios y el sistema enfocado en la búsqueda y monitoreo de contribuyentes que el Servicio de Administración Tributaria (SAT) reporta como incumplidos.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link": "https://sccontribuyentes.com/",
+				"img" : "/assets/img/experience/scc.jpg"
 			},
 			{ 
-				"name" : "Televisa Regional",
-				"desc" : "Desarrolle una estructura para mostrar banners publicitarios, colabore en la automatización de la inserción de páginas dentro del sitemap y aporte un algoritmo para las notas destacadas." 
+				"title" : "Televisa Regional",
+				"subtitle": "CMS",
+				"desc" : "Desarrolle una estructura para mostrar banners publicitarios, colabore en la automatización de la inserción de páginas dentro del sitemap y aporte un algoritmo para las notas destacadas.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link" : "https://televisaregional.com/",
+				"img" : "/assets/img/experience/televisa.jpg"
 			},
 			{ 
-				"name" : "Villa Casalet",
-				"desc" : "Es un sitio que ofrece el servicio de hospedaje en Puerto Escondido Oaxaca, México en donde ayude en la realización del sitio en base a un diseño aprobado." 
+				"title" : "Villa Casalet",
+				"subtitle": "Sitio Web",
+				"desc" : "Es un sitio que ofrece el servicio de hospedaje en Puerto Escondido Oaxaca, México en donde ayude en la realización del sitio en base a un diseño aprobado.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link": "https://villacasalet.com/",
+				"img" : "/assets/img/experience/villacasalet.jpg"
 			}
-		]
+		],
+		"contact" : {
+			"title" : "Aquí / Consulta",
+			"content" : "Te dejo mis datos para ponernos en contacto en cualquier hora del día, no importa la zona horaria, si es que me contactas desde Tombuctú.",
+			"list" : {
+				"phone":"+55 5197 7836",
+				"mail":"erickalvacontact@gmail.com",
+				"address":"Cuautitlán México"
+			}
+		},
+		"footer" : {
+			"content" : "Muchas gracias si llegaste hasta esta parte del sitio, para mi significa mucho que puedas hechar un vistazo completo a mi trabajo, no olvides mandarme un mensaje por si gustas colaborar conmigo ;)",
+			"titles" : {
+				"map" : "Enlaces del sitio",
+				"social" : "Redes sociales"
+			}
+		}
 	},
 	"en": {
-		"desc": "I'm Enginner in Information technology and communications dedicated to software development.",
+		"menu" : {
+			"home":"Home",
+			"skills":"Skills",
+			"about":"About",
+			"projects":"Experience",
+			"contact" :"Contact"
+		},
+		"home" : {
+			"title" : { "head1" : "Hi", "head2" : "My name is" , "head3" : "Erick" },
+			"button" : "Portfolio"
+		},
+		"skills" : {
+			"frontEnd" : { 
+				"title" : "Web Development",
+				"content" : "Make UX / UI proposals and user interaction within the web as well as receiving and sending data to the server."
+			},
+			"backEnd" : { 
+				"title" : "Back End Development",
+				"content" : "Develop server-side code to integrate with enterprise back-end systems and cloud services." 
+			},
+			"mobile": { 
+				"title" : "Mobile Application Development",
+				"content" : "Build of mobile applications that connect securely with the information that is needed."
+			}
+		},
+		"about" : {
+			"title" : "Developer Software",
+			"subtitle" : "Hi! This is Erick",
+			"own" : "Another simple developer.",
+			"desc": "I'm a TI Engineer and I have 3 years of experience in the web development area. I also have the knowledge in automation and software architecture.",
+			"buttons" : {  "download" : "Download Resume", "know":"Contact Me !!!" }
+		},
 		"experience": [
 			{ 
-				"name" : "Fonatur",
-				"desc" : "//" 
+				"title" : "Fonatur",
+				"subtitle": "Web Search",
+				"desc" : "A development  for the National Fund for the Promotion of Tourism that consisted of a search engine for single-family lots, condominiums, commercials and hotels seeking investment in Mexican tourist regions.",
+				"buttons": { "visit": "Go to the webSite", "know": "Know More" },
+				"link" : "http://www.fonatur.mx/es/venta-terrenos.html",
+				"img" : "/assets/img/experience/fonatur.jpg"
 			},
 			{ 
-				"name" : "Mayan group",
-				"desc" : "//" 
+				"title" : "Maya Group",
+				"subtitle": "ERP System",
+				"desc" : "I supported the site, ERP, mobile application (publication in application stores) and I was part of the team that made version 2 of the ERP",
+				"buttons": { "visit": "Go to the webSite", "know": "Know More" },
+				"link":"https://mayaseguridad.mx/",
+				"img" : "/assets/img/experience/grupomaya.jpg"
 			},
 			{ 
-				"name" : "Infrastructure",
-				"desc" : "//" 
+				"title" : "Infrastructure",
+				"subtitle": "Service Config",
+				"desc" : "I have worked in activities that involve virtual host configuration, creation and support, automation scripts, domain and website migration as well as database backups.",
+				"buttons": { "visit": "Go to the webSite", "know": "Know More" },
+				"link": "#",
+				"img" : "/assets/img/experience/server.jpg"
 			},
 			{ 
-				"name" : "Muvop",
-				"desc" : "//" 
+				"title" : "Muvop",
+				"subtitle": "Courses Online",
+				"desc" : "Muvop is a financial company that supports men, women and businesses where it collaborates in the creation of the platform of online courses that help strengthen personal growth.",
+				"buttons": { "visit": "Go to the webSite", "know": "Know More" },
+				"link": "https://educacion.muvop.com/",
+				"img" : "/assets/img/experience/muvop.jpg"
 			},
 			{ 
-				"name" : "Net@Work",
-				"desc" : "//" 
+				"title" : "Net@Work",
+				"subtitle": "Web site and Point of Sale",
+				"desc" : "It is a space for coworking, they are located in the Roma neighborhood of CDMX. I carried out the realization of the website and participated in the development of the point of sale.",
+				"buttons": { "visit": "Go to the webSite", "know": "Know More" },
+				"link": "https://netw.com.mx/",
+				"img" : "/assets/img/experience/NETW.jpg"
 			},
 			{ 
-				"name" : "Taxpayer Consultation System",
-				"desc" : "//" 
+				"title" : "Taxpayer Consultation System",
+				"subtitle": "",
+				"desc" : "Contribution in the realization of sites and the system focused on the search and monitoring of taxpayers that the Tax Administration Service (SAT) reports as non-compliant",
+				"buttons": { "visit": "Go to the webSite", "know": "Know More" },
+				"link": "https://sccontribuyentes.com/",
+				"img" : "/assets/img/experience/scc.jpg"
 			},
 			{ 
-				"name" : "Televisa Regional",
-				"desc" : "//" 
+				"title" : "Televisa Regional",
+				"subtitle": "CMS",
+				"desc" : "Develop a structure to display ad banners, help automate the insertion of pages within the sitemap, and provide an algorithm for featured notes.",
+				"buttons": { "visit": "Go to the webSite", "know": "Know More" },
+				"link" : "https://televisaregional.com/",
+				"img" : "/assets/img/experience/televisa.jpg"
 			},
 			{ 
-				"name" : "Villa Casalet",
-				"desc" : "//" 
+				"title" : "Villa Casalet",
+				"subtitle": "Web Site",
+				"desc" : "It is a site that offers the hosting service in Puerto Escondido Oaxaca, Mexico where it helps in the realization of the site based on an approved design.",
+				"buttons": { "visit": "Go to the webSite", "know": "Know More" },
+				"link": "https://villacasalet.com/",
+				"img" : "/assets/img/experience/villacasalet.jpg"
 			}
-		]
+		],
+		"contact" : {
+			"title" : "Here/Inquiry",
+			"content" : "I leave you my information to get in touch at any time of the day, no matter the time zone, if you contact me from Timbuktu.",
+			"list" : {
+				"phone":"+55 5197 7836",
+				"mail":"erickalvacontact@gmail.com",
+				"address":"Cuautitlán México"
+			}
+		},
+		"footer" : {
+			"content" : "Thank you very much if you got to this part of the site, for me it means a lot that you can take a complete look at my work, do not forget to send me a message if you would like to collaborate with me ;)",
+			"titles" : {
+				"map" : "Link of Site",
+				"social" : "Social Links"
+			}
+		}
 	}
 }

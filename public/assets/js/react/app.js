@@ -1,5 +1,16 @@
 const App = () => {
 
+	const [ idiom ] = useIdiom();
+
+	const { 
+		name:name_input, 
+		email:email_input, 
+		phone:phone_input, 
+		message:message_input, 
+		message_screen, 
+		button_send 
+	} = idiom;
+
 	const { 
 			values:formValues, 
 			handleInputChanges, 
@@ -38,10 +49,10 @@ const App = () => {
 					myState={ name }
 					myHandleFunction={ handleInputChanges }
 					type="text"
-					label="Nombre: *"
-					placeholder="Nombre"
+					label={ name_input.label }
+					placeholder={ name_input.placeholder }
 					name="name"
-					msgError="El nombre debe tener solo letras."
+					msgError={ name_input.msg }
 					regex={ expresiones.nombre }
 					icon={icon}
 					changeIcon={ changeIcon }
@@ -52,10 +63,10 @@ const App = () => {
 					myState={ email }
 					myHandleFunction={ handleInputChanges }
 					type="text"
-					label="Email: *"
-					placeholder="Email"
+					label={ email_input.label }
+					placeholder={ email_input.placeholder }
 					name="email"
-					msgError="No es un formato válido de correo."
+					msgError={ email_input.msg }
 					regex={ expresiones.correo }
 					icon={icon}
 					changeIcon={ changeIcon }
@@ -66,10 +77,10 @@ const App = () => {
 					myState={ phone }
 					myHandleFunction={ handleInputChanges }
 					type="text"
-					label="Teléfono:"
-					placeholder="Teléfono"
+					label={ phone_input.label }
+					placeholder={ phone_input.placeholder }
 					name="phone"
-					msgError="No es un formato válido de teléfono."
+					msgError={ phone_input.msg }
 					regex={ expresiones.telefono }
 					icon={ icon }
 					changeIcon={ changeIcon }
@@ -80,10 +91,10 @@ const App = () => {
 					myState={ message }
 					myHandleFunction={ handleInputChanges }
 					type="text"
-					label="Mensaje: "
-					placeholder="Escribe aquí"
+					label={ message_input.label }
+					placeholder={ message_input.placeholder }
 					name="message"
-					msgError="El mensaje debe tener solo letras."
+					msgError={ message_input.msg }
 					regex={ expresiones.mensaje }
 					icon={ icon }
 					changeIcon={ changeIcon }
@@ -93,15 +104,15 @@ const App = () => {
 				{ formularioValido === false && 
 					<MensajeError>
 						<p>
-							<i class="fas fa-exclamation-circle"></i> <b>Error:</b> Todos los campos son obligatorios.
+							<i class="fas fa-exclamation-circle"></i> <b>{ message_screen.error_title }</b>{ message_screen.error_content }
 						</p>
 					</MensajeError> 
 				}
 
 				<ContenedorBotonCentrado>
-					<Boton type="submit">Enviar</Boton>
+					<Boton type="submit">{ button_send }</Boton>
 					{ ( formularioValido && time ) && 
-						<MensajeExito id="success-message">Enviado exitosamente!</MensajeExito> 
+						<MensajeExito id="success-message">{ message_screen.success_form }</MensajeExito> 
 					}
 				</ContenedorBotonCentrado>
 

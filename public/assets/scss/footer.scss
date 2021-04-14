@@ -17,7 +17,7 @@
 			display: flex;
 			align-items: flex-start;
 			justify-content: flex-start;
-			gap: 2rem;
+			gap: 10rem;
 			ul{
 				list-style: none;
 				padding-left: 0px;
@@ -48,7 +48,7 @@
 				line-height: 1.5em;
 			}
 			.con-1{
-				flex: 3;
+				flex: 4;
 				.logo{
 					img{
 						max-width: 100px;
@@ -59,20 +59,24 @@
 
 					}
 				}
+				p{
+					text-align: justify;
+				}
 			}
 			.con-2 {
-				flex: 2;
+				flex: 3;
 			}
 			.con-3 {
-				flex: 2;
+				flex: 3;
 			}
 			.con-4{
-				flex: 1;
+				flex: 3;
 				ul{
 					display: flex;
 					flex-wrap: wrap;
 					a{
 						min-width: 50px;
+						text-align: center;
 					}
 				}
 			}
@@ -98,9 +102,13 @@
 			align-items: center;
 			justify-content: center;
 			text-align: center;
+			gap: 2rem;
 			.con-1{
 				width: 100%;
 				margin-bottom: 3rem;
+				p{
+					text-align: center;
+				}
 			}
 			.con-2{
 				width: 100%;

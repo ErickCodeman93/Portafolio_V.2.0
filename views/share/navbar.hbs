@@ -1,29 +1,3 @@
-{{!-- <nav class="navbar navbar-dark bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/{{ idiomUrl }}">Template by {{ template }}</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/{{ idiomUrl }}">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/{{ idiomUrl }}/about">About</a>
-        </li>
-        <li class="nav-item">
-          <span class="nav-link d-inline cursorEventIdom" onclick="changeIdomPage('es')">Es</span> 
-          <span class="text-white-50">/</span> 
-          <span class="nav-link d-inline cursorEventIdom" onclick="changeIdomPage('en')">En</span>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        ;)  
-      </span>
-    </div>
-  </div>
-</nav> --}}
 <nav id="nav-hero">
   <section class="nav-hero contain">
     <div class="nav-bar">
@@ -35,11 +9,13 @@
       <div class="nav-list">
         <div class="hamburguer"><div class="bar"></div></div>
         <ul>
-          <li><a href="#" data-after="Home">Home</a></li>
-          <li><a href="#" data-after="Services">Services</a></li>
-          <li><a href="#" data-after="Projects">Projects</a></li>
-          <li><a href="#" data-after="About">About</a></li>
-          <li><a href="#" data-after="Contact">Contact</a></li>
+          <li><a href="#" data-after="{{ data.menu.home }}">{{ data.menu.home }}</a></li>
+          <li><a href="#" data-after="{{ data.menu.skills }}">{{ data.menu.skills }}</a></li>
+          <li><a href="#" data-after="{{ data.menu.projects }}">{{ data.menu.projects }}</a></li>
+          <li><a href="#" data-after="{{ data.menu.about }}">{{ data.menu.about }}</a></li>
+          <li><a href="#" data-after="{{ data.menu.contact }}">{{ data.menu.contact }}</a></li>
+          <li><a href="/es" data-after="ES">ES</a></li>
+          <li><a href="/en" data-after="EN">EN</a></li>
         </ul>
       </div>
     </div>

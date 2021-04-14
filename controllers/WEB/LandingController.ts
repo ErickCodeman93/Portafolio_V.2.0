@@ -13,13 +13,13 @@ export const homeController = ( req : Request, res: Response ) => {
 	idiomSave = idiomUrl; 
 
 	//De acuerdo al idioma de la pagina donde se hizo la peticion es la informacion que devuelve
-	const { desc, experience } = sendInformation( idiomUrl );
+	const info = sendInformation( idiomUrl );
 
 	res.render( 'page', {
 		template: 'Erick Alva',
 		namePage: 'Hola',
 		title: 'Home | myPage',
-		content: desc,
+		data: info,
 		idiomUrl,
 		whichPartial: function() {
 			return "home";

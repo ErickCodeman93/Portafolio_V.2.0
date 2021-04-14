@@ -6,6 +6,9 @@ const useForm = ( initialState = {} ) => {
 	const [ formularioValido, setFormularioValido ] = useState( null );
 	const [ time, setTime ] 	= useState( false );
 	const [ icon, setIcon ] 	= useState( false );
+	const [ idiom ] = useIdiom();
+
+	const { message_screen } = idiom;
 
 	const { name, email, phone, message } = values;
 
@@ -51,7 +54,7 @@ const useForm = ( initialState = {} ) => {
 
 		Swal.fire( {
 			"allowOutsideClick": false,
-			"title": "Espere un momento por favor.",
+			"title": message_screen.loading,
 		} );
 
 		Swal.showLoading();
@@ -64,7 +67,7 @@ const useForm = ( initialState = {} ) => {
 
 				Swal.fire( {
 					"confirmButtonText": "Aceptar",
-					"title": "Éxito",
+					"title": message_screen.success,
 					"icon": 'success',
 				} );
 
@@ -92,7 +95,7 @@ const useForm = ( initialState = {} ) => {
 				"confirmButtonText": "Aceptar",
 				"title": "Error",
 				"icon": "error",
-				'text': "Error del servidor"
+				'text': "Server Error"
 			});
 		} )
 
