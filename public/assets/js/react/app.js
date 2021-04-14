@@ -104,7 +104,7 @@ const App = () => {
 				{ formularioValido === false && 
 					<MensajeError>
 						<p>
-							<i class="fas fa-exclamation-circle"></i> <b>{ message_screen.error_title }</b>{ message_screen.error_content }
+							<i class="fas fa-exclamation-circle"></i> <b>{ message_screen.error_title }</b> { message_screen.error_content }
 						</p>
 					</MensajeError> 
 				}

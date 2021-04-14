@@ -79,14 +79,14 @@ const readHTMLFile = ( path: string, data: any, isClient: boolean, idiom:string 
                     mailConfig = {
                         from: 'erickalvacontact@gmail.com',
                         to: isClient ? email : 'erickalvacontact@gmail.com',
-                        subject: isClient ? 'Gracias por ponerte en contacto!!!' : 'Tienes un nuevo mensaje de contacto de tu sitio web!!!',
+                        subject: isClient ? 'Muchas Gracias!!!, en breve me pondre en contacto' : 'Tienes un nuevo mensaje de contacto de tu sitio web!!!',
                         html : htmlToSend
                     }
                 else    
                     mailConfig = {
                         from: 'erickalvacontact@gmail.com',
                         to: isClient ? email : 'erickalvacontact@gmail.com',
-                        subject: isClient ? 'Thanks for getting in contact with me !!!' : 'Someone wants to contact you from your web site',
+                        subject: isClient ? 'Thank you very much !!!, I will contact you shortly' : 'You have a new contact message from your website !!!',
                         html : htmlToSend
                     }
         

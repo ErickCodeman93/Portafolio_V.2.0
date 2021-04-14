@@ -26,11 +26,23 @@ const changeIdomPage = ( idiom ) => {
 
 //:: End Config Url
 
-const hamburguer = document.querySelector(".nav-hero .nav-bar .nav-list .hamburguer");
-const mobile_menu = document.querySelector(".nav-hero .nav-bar .nav-list ul");
-const header = document.querySelector( ".nav-hero .contain" );
+let hamburguer = document.querySelector(".nav-hero .nav-bar .nav-list .hamburguer");
+let mobile_menu = document.querySelector(".nav-hero .nav-bar .nav-list ul");
+// const header = document.querySelector( "nav .nav-hero .contain" );
 
 hamburguer.addEventListener( 'click', () => {
 	hamburguer.classList.toggle('active');
 	mobile_menu.classList.toggle('active');
+} );
+
+document.addEventListener( 'scroll', () => {
+
+	let scroll_position = window.scrollY;
+	let nav = document.querySelector('#nav-hero');
+
+	if( scroll_position > 250 )
+		nav.style.backgroundColor = '#29323c';
+	else
+		nav.style.backgroundColor = 'transparent';
+
 } );

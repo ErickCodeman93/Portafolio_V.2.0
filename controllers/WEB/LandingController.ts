@@ -18,7 +18,7 @@ export const homeController = ( req : Request, res: Response ) => {
 	res.render( 'page', {
 		template: 'Erick Alva',
 		namePage: 'Hola',
-		title: 'Home | myPage',
+		title: 'Erick Alva | Portfolio',
 		data: info,
 		idiomUrl,
 		whichPartial: function() {
