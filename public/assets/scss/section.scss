@@ -76,7 +76,7 @@
 	
 		color: transparent;
 		/* -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.103); */
-		-webkit-text-stroke: 1.5px #5a24ed2f;
+		-webkit-text-stroke: 1.5px #e9ecef;
 		z-index: -1;
 	}
 		
@@ -244,7 +244,7 @@
 					height: 500px;
 					overflow: hidden;
 					border-radius: 12px;
-					box-shadow: 0px 0px 20px #4705fc33;
+					box-shadow: 0px 0px 20px #00968838;
 					position: relative;
 					&::after{
 						position: absolute;
@@ -265,7 +265,7 @@
 				flex:1;
 				margin-left: -150px;
 				// background-color: var(--body-bg);
-				background-color: #e4ebf1;
+				background-color: #e9ecef;
 				padding: 5rem 2rem;
 				border-radius: 12px;
 				box-shadow: 0 0 20px #00000028;
