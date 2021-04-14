@@ -3,14 +3,14 @@
 #{$tablet},
 #{$phone} {
 	:root {
-		--primary-color: #5924ed;
+		--primary-color: #009688;
 		--secondary-black: #0d081a;
 		--secondary-gray: #48464b;
 		--body-bg: #efebfa;
 	}
 
 	#footer{
-		background-color: #311580;
+		background-color: #303F9F;
 		color: white;
 		padding: 5rem 0 1rem 0;
 		footer {
@@ -85,7 +85,7 @@
 
 	#copyright{
 		padding: .3rem 0;
-		background-color: #221052;
+		background-color: #3F51B5;
 		p{
 			color:white;
 			margin: 0px;

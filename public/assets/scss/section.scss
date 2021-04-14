@@ -9,7 +9,7 @@
 	}
 
 	:root {
-		--primary-color: #5924ed;
+		--primary-color: #009688;
 		--secondary-black: #0d081a;
 		--secondary-gray: #48464b;
 		--body-bg: #efebfa;
@@ -53,7 +53,7 @@
 	
 	// Service
 	.section-heading {
-		font-size: clamp(2rem, 10vw, 8rem);
+		font-size: clamp(2rem, 8vw, 6rem);
 		text-transform: uppercase;
 		font-family: 'Montserrat';
 		letter-spacing: 0.2rem;
@@ -120,6 +120,9 @@
 			}
 			&:nth-child(3) .icon {
 				background-color: #4705fc80;
+				img{
+					margin-left: 2px;
+				}
 			}
 
 		}
@@ -202,6 +205,26 @@
 		}
 	}
 
+	#tech{
+		padding: 0rem 0 3rem 0 !important;
+		.all-items{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-flow: row wrap;
+			.item{
+				padding: 1rem;
+				border-radius: 18px;
+				// height: 85px;
+				width: 120px;
+				transition: .3s ease box-shadow;
+				&:hover{
+					box-shadow: 0px 0px 20px #4705fc33;
+				}
+			}
+		}
+	}
+
 	#projects{
 
 		.item{
@@ -229,7 +252,7 @@
 						right: 0;
 						height: 100%;
 						width: 100%;
-						background-color: #5a24ed38;
+						background-color: #00968838;
 					}
 					img{
 						object-fit: cover;

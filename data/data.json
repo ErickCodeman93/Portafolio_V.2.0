@@ -34,9 +34,17 @@
 		},
 		"experience": [
 			{ 
+				"title" : "BusBus",
+				"subtitle": "Sitio Web",
+				"desc" : "El sitio web se realizó para la agencia Busbus que se dedica a la publicidad en camiones y espectaculares en base a un diseño propuesto por ellos mismos.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link" : "https://busbus.com.mx",
+				"img" : "/assets/img/experience/busbus_page.jpg"
+			},
+			{ 
 				"title" : "Fonatur",
 				"subtitle": "Buscador Web",
-				"desc" : "Un desarrollo elaborado para el Fondo Nacional de Fomento al Turismo que consistió en un buscador de lotes unifamiliares, condominios, comerciales y hoteleros que buscan inversión en regiones turísticas mexicanas.",
+				"desc" : "El sitio web se realizó para la agencia Busbus que se dedica a la publicidad en camiones y espectaculares en base a un diseño propuesto por ellos mismos.",
 				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
 				"link" : "http://www.fonatur.mx/es/venta-terrenos.html",
 				"img" : "/assets/img/experience/fonatur.jpg"
@@ -74,6 +82,14 @@
 				"img" : "/assets/img/experience/NETW.jpg"
 			},
 			{ 
+				"title" : "Plataforma para campañas en publicidad en camiones y espectaculares",
+				"subtitle": "",
+				"desc" : "Colabore en la realización de esta plataforma para una agencia que su actividad es la publicidad en camiones y espectaculares, la cual se muestran diferentes mapas de ciudades de México en google maps en donde se pueden marcar diferentes rutas del transporte con el fin de trazar y hacer una estrategia para una campaña a un cliente en específico.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link" : "#",
+				"img" : "/assets/img/experience/busbus_plataforma.jpg"
+			},
+			{ 
 				"title" : "Sistema de Consulta de Contribuyentes",
 				"subtitle": "",
 				"desc" : "Aporte en la realización de sitios y el sistema enfocado en la búsqueda y monitoreo de contribuyentes que el Servicio de Administración Tributaria (SAT) reporta como incumplidos.",
@@ -108,7 +124,7 @@
 			}
 		},
 		"footer" : {
-			"content" : "Muchas gracias si llegaste hasta esta parte del sitio, para mi significa mucho que puedas hechar un vistazo completo a mi trabajo, no olvides mandarme un mensaje por si gustas colaborar conmigo ;)",
+			"content" : "Muchas gracias si llegaste hasta esta parte del sitio, para mi significa mucho que puedas echar un vistazo completo a mi trabajo, no olvides mandarme un mensaje por si gustas colaborar conmigo ;)",
 			"titles" : {
 				"map" : "Enlaces del sitio",
 				"social" : "Redes sociales"
@@ -150,6 +166,14 @@
 		},
 		"experience": [
 			{ 
+				"title" : "BusBus",
+				"subtitle": "Web Site",
+				"desc" : "The website was made for the Busbus agency that is dedicated to advertising on trucks and billboards based on a design proposed by themselves.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link" : "https://busbus.com.mx",
+				"img" : "/assets/img/experience/busbus_page.jpg"
+			},
+			{ 
 				"title" : "Fonatur",
 				"subtitle": "Web Search",
 				"desc" : "A development  for the National Fund for the Promotion of Tourism that consisted of a search engine for single-family lots, condominiums, commercials and hotels seeking investment in Mexican tourist regions.",
@@ -188,6 +212,14 @@
 				"buttons": { "visit": "Go to the webSite", "know": "Know More" },
 				"link": "https://netw.com.mx/",
 				"img" : "/assets/img/experience/NETW.jpg"
+			},
+			{ 
+				"title" : "Plataforma para campañas en publicidad en camiones y espectaculares",
+				"subtitle": "",
+				"desc" : "Collaborate in the realization of this platform for an agency whose activity is advertising in trucks and spectacular, which shows different maps of cities in Mexico in google maps where different transport routes can be marked in order to trace and make a strategy for a campaign to a specific client.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link" : "#",
+				"img" : "/assets/img/experience/busbus_plataforma.jpg"
 			},
 			{ 
 				"title" : "Taxpayer Consultation System",
