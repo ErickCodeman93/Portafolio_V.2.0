@@ -155,7 +155,7 @@
 				text-align: center;
 
 				.card {
-					box-shadow: 0px 0px 20px #4705fc33;
+					box-shadow: 0px 0px 20px #00968838;
 					padding: 3rem;
 					border-radius: 12px;
 					min-height: 400px;
@@ -264,7 +264,8 @@
 			.right{
 				flex:1;
 				margin-left: -150px;
-				background-color: var(--body-bg);
+				// background-color: var(--body-bg);
+				background-color: #e4ebf1;
 				padding: 5rem 2rem;
 				border-radius: 12px;
 				box-shadow: 0 0 20px #00000028;
