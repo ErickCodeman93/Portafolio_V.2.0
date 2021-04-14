@@ -164,7 +164,7 @@ const ContenedorBotonCentrado = window.styled.div`
 const Boton = window.styled.button`
 	height: 45px;
 	line-height: 45px;
-	width: 30%;
+	width: 35%;
 	// background: #000;
 	// color: #fff;
 	color: #000;
