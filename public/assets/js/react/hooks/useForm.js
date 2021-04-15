@@ -33,7 +33,7 @@ const useForm = ( initialState = {} ) => {
 
 		const [ ,idiom ] = location.pathname.split( '/' );
 
-		if( name.valido === 'true' && email.valido  === 'true' ){
+		if( name.valido === 'true' && email.valido  === 'true' && phone.valido  === 'true' && message.valido  === 'true'  ){
 			setFormularioValido( true );
 			clearValues();
 		} //end if

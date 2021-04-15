@@ -15,18 +15,18 @@ const useIdiom = () => {
 				"msg" : "No es un formato válido de email."
 			},
 			"phone" : {
-				"label":"Teléfono",
+				"label":"Teléfono *",
 				"placeholder":"Escribe tu teléfono",
 				"msg" : "No es un formato válido de teléfono."
 			},
 			"message" : {
-				"label":"Mensaje",
+				"label":"Mensaje *",
 				"placeholder":"Escribe tu mensaje aquí",
-				"msg" : "El mensaje debe tener solo letras."
+				"msg" : "El mensaje debe tener al menos 15 caracteres."
 			},
 			"message_screen" : {
 				"error_title" : "Error:",
-				"error_content" : "Todos los campos son obligatorios.",
+				"error_content" : "Todos los campos con * son obligatorios.",
 				"succes_form" : "Enviado exitosamente !!!",
 				"loading" : "Espere un momento por favor.",
 				"success" : "Éxito"
@@ -46,18 +46,18 @@ const useIdiom = () => {
 				"msg" : "It is not a valid email format."
 			},
 			"phone" : {
-				"label":"Tel",
-				"placeholder":"Your tel here",
+				"label":"Phone Number *",
+				"placeholder":"Your phone number here",
 				"msg" : "It is not a valid tel format."
 			},
 			"message" : {
-				"label":"Message",
+				"label":"Message *",
 				"placeholder":"Write your message here",
-				"msg" : "The message must have only letters."
+				"msg" : "The message must be at least 15 characters long."
 			},
 			"message_screen" : {
 				"error_title" : "Error:",
-				"error_content" : "All fields are required.",
+				"error_content" : "All fields with * are required.",
 				"succes_form" : "success !!!",
 				"loading" : "Wait a moment please.",
 				"success" : "Success"
