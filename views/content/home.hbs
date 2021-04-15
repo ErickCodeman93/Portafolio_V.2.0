@@ -145,9 +145,14 @@
 						<h2 class="project-title">{{ this.title }}</h2>
 						<h3 class="project-sub-title">{{ this.subtitle }}</h3>
 						<p class="project-desc">{{ this.desc }}</p>
+						{{!-- {{ @index }}{{ @key }} --}}
 						<div class="buttons">
-							<a href="{{ this.link }}" class="primary-btn" target="_blank">{{ this.buttons.visit }}</a>
-							<a href="#contact" class="primary-btn outline external-link"> <span>{{ this.buttons.know }}</span>
+							{{#ifThird @index}}
+								{{!-- <button class="primary-btn">{{ this.buttons.visit }}</button> --}}
+							{{else}}
+								<a href="{{ this.link }}" class="primary-btn" target="_blank">{{ this.buttons.visit }}</a>
+							{{/ifThird}}
+								<a href="#contact" class="primary-btn outline external-link"> <span>{{ this.buttons.know }}</span>
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 									d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
