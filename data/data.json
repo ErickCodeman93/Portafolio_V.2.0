@@ -84,7 +84,7 @@
 			{ 
 				"title" : "Plataforma para campañas en publicidad en camiones y espectaculares",
 				"subtitle": "",
-				"desc" : "Colabore en la realización de esta plataforma para una agencia que su actividad es la publicidad en camiones y espectaculares, la cual se muestran diferentes mapas de ciudades de México en google maps en donde se pueden marcar diferentes rutas del transporte con el fin de trazar y hacer una estrategia para una campaña a un cliente en específico.",
+				"desc" : "Colabore en la realización de esta plataforma para una agencia que su actividad es la publicidad en camiones y espectaculares, la cual se muestran diferentes mapas de ciudades de México en google maps, en donde se pueden marcar diferentes rutas del transporte con el fin de trazar y hacer una estrategia para una campaña a un cliente en específico.",
 				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
 				"link" : "#",
 				"img" : "/assets/img/experience/busbus_plataforma.jpg"
@@ -184,7 +184,7 @@
 			{ 
 				"title" : "Maya Group",
 				"subtitle": "ERP System",
-				"desc" : "I supported the site, ERP, mobile application (publication in application stores) and I was part of the team that made version 2 of the ERP",
+				"desc" : "Collaborate with the ERP mobile app (publication in app stores) and I was part of the team that made version 2 of the ERP",
 				"buttons": { "visit": "Go to the webSite", "know": "Know More" },
 				"link":"https://mayaseguridad.mx/",
 				"img" : "/assets/img/experience/grupomaya.jpg"
@@ -208,7 +208,7 @@
 			{ 
 				"title" : "Net@Work",
 				"subtitle": "Web site and Point of Sale",
-				"desc" : "It is a space for coworking, they are located in the Roma neighborhood of CDMX. I carried out the realization of the website and participated in the development of the point of sale.",
+				"desc" : "It is a space for coworking, they are located in the gypsy neighborhood of CDMX. I was in charge of the realization of the website and participated in the development of the point of sale.",
 				"buttons": { "visit": "Go to the webSite", "know": "Know More" },
 				"link": "https://netw.com.mx/",
 				"img" : "/assets/img/experience/NETW.jpg"
@@ -216,7 +216,7 @@
 			{ 
 				"title" : "Platform for advertising campaigns on trucks and billboards",
 				"subtitle": "",
-				"desc" : "Collaborate in the realization of this platform for an agency whose activity is advertising in trucks and spectacular, which shows different maps of cities in Mexico in google maps where different transport routes can be marked in order to trace and make a strategy for a campaign to a specific client.",
+				"desc" : "Collaborate in the realization of this platform for an agency whose activity is advertising in trucks and spectacular, which shows different maps of cities in Mexico in google, where different transport routes can be marked in order to trace and make a strategy for a campaign to a specific client.",
 				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
 				"link" : "#",
 				"img" : "/assets/img/experience/busbus_plataforma.jpg"

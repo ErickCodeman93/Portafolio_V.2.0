@@ -19,7 +19,7 @@ exports.sendInformation = sendInformation;
 //Helpers by hbs
 hbs_1.default.registerHelper('getAnio', () => new Date().getFullYear());
 hbs_1.default.registerHelper('ifThird', function (index, options) {
-    if (index == 3)
+    if (index == 3 || index == 6)
         return options.fn(this);
     else
         return options.inverse(this);
