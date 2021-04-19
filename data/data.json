@@ -30,8 +30,9 @@
 			"subtitle" : "Hola! soy Erick",
 			"own" : "Otro simple desarrollador.",
 			"desc": "Soy Ingeniero en TIC ’S y cuento con 3 años de experiencia en el área de desarrollo web. También cuento con el conocimiento en automatización y arquitectura de software.",
-			"buttons" : {  "download" : "Descarga mi CV", "know":"Colaboremos !!!" }
-		},
+			"buttons" : {  "download" : "Descarga mi CV", "know":"Colaboremos !!!" },
+			"links" : "https://datainfo.s3-us-west-1.amazonaws.com/CV_ErickAlva.pdf"
+ 		},
 		"experience": [
 			{ 
 				"title" : "BusBus",
@@ -161,8 +162,9 @@
 			"title" : "Software Developer",
 			"subtitle" : "Hi! This is Erick",
 			"own" : "Another simple developer.",
-			"desc": "I'm a TI Engineer and I have 3 years of experience in the web development area. I also have the knowledge in automation and software architecture.",
-			"buttons" : {  "download" : "Download Resume", "know":"Contact Me !!!" }
+			"desc": "I'm a TI engineer with 3 years of experience in the web development area and the knowledge in automation and software architecture.",
+			"buttons" : {  "download" : "Download Resume", "know":"Contact Me !!!" },
+			"links" : "https://datainfo.s3-us-west-1.amazonaws.com/Erick_Alva_En.pdf"
 		},
 		"experience": [
 			{ 
