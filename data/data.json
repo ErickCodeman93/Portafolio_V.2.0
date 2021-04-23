@@ -31,7 +31,7 @@
 			"own" : "Otro simple desarrollador.",
 			"desc": "Soy Ingeniero en TIC ’S y cuento con 3 años de experiencia en el área de desarrollo web. También cuento con el conocimiento en automatización y arquitectura de software.",
 			"buttons" : {  "download" : "Descarga mi CV", "know":"Colaboremos !!!" },
-			"links" : "https://datainfo.s3-us-west-1.amazonaws.com/CV_ErickAlva.pdf"
+			"links" : "https://datainfo.s3-us-west-1.amazonaws.com/Erick_Alva_ES.pdf"
  		},
 		"experience": [
 			{ 
@@ -41,6 +41,14 @@
 				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
 				"link" : "https://busbus.com.mx",
 				"img" : "/assets/img/experience/busbus_page.jpg"
+			},
+			{ 
+				"title" : "Cancun Today",
+				"subtitle": "Sitio Web",
+				"desc" : "El sitio web muestra un mapa de tours y destinos en cancún usando la API de google maps.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link" : "http://cancuntoday.net/section/maps",
+				"img" : "/assets/img/experience/cancun_today.jpg"
 			},
 			{ 
 				"title" : "Fonatur",
@@ -174,6 +182,14 @@
 				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
 				"link" : "https://busbus.com.mx",
 				"img" : "/assets/img/experience/busbus_page.jpg"
+			},
+			{ 
+				"title" : "Cancun Today",
+				"subtitle": "Web Site",
+				"desc" : "The website shows a map of tours and destinations in Cancun using the google maps API.",
+				"buttons": { "visit": "Visitar el sitio", "know": "Saber más" },
+				"link" : "http://cancuntoday.net/section/maps",
+				"img" : "/assets/img/experience/cancun_today.jpg"
 			},
 			{ 
 				"title" : "Fonatur",
